@@ -1,3 +1,6 @@
+_default:
+  just -l
+
 # deterministically tar a directory
 tar dir outfile:
   tar cvf - {{dir}} | gzip -n > {{outfile}}.tar.gz
