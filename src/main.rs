@@ -16,6 +16,7 @@ enum Action {
     Decrypt,
 }
 
+/// The password is read from STDIN
 #[derive(Debug, Parser)]
 struct Cli {
     action: Action,
